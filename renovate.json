@@ -2,9 +2,16 @@
   "extends": [
     "config:base"
   ],
-  "kubernetes": {
-    "fileMatch": [
-      "kustomization.yaml$"
-    ]
-  }
+  "packageRules": [
+    {
+      "managers": [
+        "kustomize"
+      ],
+      "datasources": [
+        "docker",
+        "git-tags",
+        "github-tags"
+      ]
+    }
+  ]
 }
