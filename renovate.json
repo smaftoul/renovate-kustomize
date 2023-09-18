@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "kubernetes": {
+    "fileMatch": [
+      "kustomization.yaml$"
+    ]
+  }
+}
